@@ -21,8 +21,8 @@ for (ones_1 = 0; ones_1 <= max; ones_1++)
 {
 putchar(tens_1 + '0');
 putchar(ones_1 + '0');
-}
 putchar(' ');
+}
 for (tens_2 = 0; tens_2 <= max; tens_2++)
 {
 for (ones_2 = tens_2 + 1; ones_2 < max; ones_2++)
