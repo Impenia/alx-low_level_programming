@@ -1,40 +1,34 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
-* main - Print all combinations of two two-digit numbers 0-99
-*
-* Return: Always 0 (Success)
-*/
+ * main - Entry point
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
 
-int tens_1;
-int ones_1;
-int tens_2;
-int ones_2;
-int max = 9;
+int digit, innerDigit;
 
-for (tens_1 = 0; tens_1 <= max; tens_1++)
+for (digit = 0; digit <= 98; digit++)
 {
-for (ones_1 = 0; ones_1 <= max; ones_1++)
+for (innerDigit = digit + 1; innerDigit <= 99; innerDigit++)
 {
-putchar(tens_1 + '0');
-putchar(ones_1 + '0');
+putchar((digit / 10) + '0');
+putchar((digit % 10) + '0');
 putchar(' ');
+putchar((innerDigit / 10) + '0');
+putchar((innerDigit % 10) + '0');
+if (innerDigit == 99 && digit == 98)
+{
+continue;
 }
-for (tens_2 = 0; tens_2 <= max; tens_2++)
-{
-for (ones_2 = tens_2 + 1; ones_2 < max; ones_2++)
-{
-putchar(tens_2 + '0');
-putchar(ones_2 + '0');
 putchar(',');
 putchar(' ');
 }
 }
-}
 putchar('\n');
-
 return (0);
 }
