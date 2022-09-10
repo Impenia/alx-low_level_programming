@@ -1,4 +1,4 @@
-M#include <stdio.h>
+#include <stdio.h>
 
 /**
 * main - Print all combinations of two two-digit numbers 0-99
@@ -21,7 +21,7 @@ for (ones_1 = 0; ones_1 <= 9; ones_1++)
 putchar(tens_1 + '0');
 putchar(ones_1 + '0');
 }
-putchar(' ');}
+putchar(' ');
 for (tens_2 = 0; tens_2 <= 9; tens_2++)
 {
 for (ones_2 = tens_2 + 1; ones_2 < 9; ones_2++)
