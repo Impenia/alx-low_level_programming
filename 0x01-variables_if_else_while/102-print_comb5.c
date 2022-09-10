@@ -15,17 +15,17 @@ int tens_2;
 int ones_2;
 int max = 9;
 
-for (tens_1 = 0; tens_1 <= $max; tens_1++)
+for (tens_1 = 0; tens_1 <= max; tens_1++)
 {
-for (ones_1 = 0; ones_1 <= $max; ones_1++)
+for (ones_1 = 0; ones_1 <= max; ones_1++)
 {
 putchar(tens_1 + '0');
 putchar(ones_1 + '0');
 }
 putchar(' ');
-for (tens_2 = 0; tens_2 <= $max; tens_2++)
+for (tens_2 = 0; tens_2 <= max; tens_2++)
 {
-for (ones_2 = tens_2 + 1; ones_2 < $max; ones_2++)
+for (ones_2 = tens_2 + 1; ones_2 < max; ones_2++)
 {
 putchar(tens_2 + '0');
 putchar(ones_2 + '0');
