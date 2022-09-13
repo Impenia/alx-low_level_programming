@@ -22,6 +22,7 @@ return (ld);
 else
 {
 _putchar(-ld + '0');
+return(-ld);
 }
 _putchar('\n');
 
