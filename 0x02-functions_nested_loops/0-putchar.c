@@ -9,7 +9,16 @@
 * On error, -1 is returned, and errno is set appropriately.
 */
 
-int _putchar(char c)
+int main(void)
 {
-return (write(1, &c, 1));
+int i;
+char a[] = "_putchar";
+
+for (i = 0; i < 8; i++)
+{
+_putchar(a[i]);
+}
+_putchar('\n');
+
+return (0);
 }
