@@ -21,5 +21,5 @@ else
 {
 return (-1);
 }
-_purtchar('\n');
+_putchar('\n');
 }
