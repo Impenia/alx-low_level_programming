@@ -18,4 +18,6 @@ _putchar(ld + '0');
 
 _putchar('\n');
 
+return (ld);
+
 }
