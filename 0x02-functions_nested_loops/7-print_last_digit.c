@@ -14,7 +14,7 @@ int ld;
 
 ld = (n % 10);
 
-return (ld);
+_putchar(ld + '0');
 
 _putchar('\n');
 
