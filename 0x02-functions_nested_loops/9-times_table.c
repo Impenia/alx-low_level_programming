@@ -34,7 +34,10 @@ _putchar(',');
 _putchar(' ');
 }
 }
+if (i < 9)
+{
 _putchar('\n');
+}
 
 }
 
