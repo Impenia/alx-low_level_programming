@@ -2,7 +2,7 @@
 #include "./main.h"
 
 /**
- * print_alpabet_x10 - Print 10 times lower alphabet
+* print_alphabet_x10 - Print 10 times lower alphabet
 *
 * Return: void.
 */
@@ -20,5 +20,5 @@ _putchar(j);
 }
 _putchar('\n');
 
- }
+}
 }
