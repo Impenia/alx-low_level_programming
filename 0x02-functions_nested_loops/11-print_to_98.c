@@ -1,5 +1,5 @@
 #include <stdio.h>
-0;276;0c#include "main.h"
+#include "main.h"
 
 /**
 * print_to_98 - Print all natural numbers from n to 98
