@@ -19,7 +19,7 @@ if (ld > 0)
 _putchar(ld + '0');
 return (ld);
 }
-else (ld < 0)
+else
 {
 _putchar(-ld + '0');
 }
