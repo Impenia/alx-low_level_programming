@@ -8,7 +8,18 @@
 * On error, -1 is returned, and errno is set appropriately.
 */
 
-int _putchar(char c);
+int _putchar(char c)
+{
+int i;
+char a[];
+
+for (i = 0; i < 8; i++)
+{
+_putchar(a[i]);
+}
+_putchar('\n');
+return (0);
+}
 
   
 /**
