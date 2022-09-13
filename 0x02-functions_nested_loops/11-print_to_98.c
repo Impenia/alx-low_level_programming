@@ -15,7 +15,12 @@ int i;
 
 for (i = n; i <= 98; i++)
 {
-printf("%i, \n", i);
+printf("%i", i);
+if (i < 98)
+{
+printf(", ");
 }
-
+else
+{
+printf("\n");
 }
