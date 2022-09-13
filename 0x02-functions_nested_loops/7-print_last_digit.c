@@ -14,10 +14,17 @@ int ld;
 
 ld = (n % 10);
 
+if (ld > 0)
+{
 _putchar(ld + '0');
-
 return (ld);
- 
+}
+else
+{
+if (ld < 0)
+{
+_putchar(-ld + '0');
+}
 _putchar('\n');
 
 
