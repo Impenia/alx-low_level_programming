@@ -1,3 +1,6 @@
+#ifndef MAIN_H
+#include MAIN_H
+
 #include <unistd.h>
 
 /**
@@ -24,3 +27,7 @@ void print_alphabet(void);
 */
 
 void print_alphabet_x10(void);
+
+
+
+#endif
