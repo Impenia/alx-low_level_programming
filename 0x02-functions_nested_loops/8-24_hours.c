@@ -6,7 +6,7 @@
 * Return: void
 */
 
-void jack_bauer(void) 
+void jack_bauer(void)
 {
 
 int a, b, c, d;
@@ -17,7 +17,7 @@ for (a = 48; a <= 50; a++)
 
 for (b = 48; b <= 57; b++)
 
-{  
+{
 
 for (c = 48; c <= 53; c++)
 
@@ -37,13 +37,13 @@ _putchar(58);
 _putchar(c);
 _putchar(d);
 _putchar('\n');
-		  
-}
-	      
-}
-	  
-}      
 
 }
- 
+
+}
+
+}
+
+}
+
 }
