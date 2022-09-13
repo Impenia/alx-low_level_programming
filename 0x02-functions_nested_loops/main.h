@@ -1,4 +1,5 @@
-#include <unistd.h>
+#ifndef main.h
+#define main.h
 
 /**
 * _putchar - writes the character c to stdout
@@ -24,3 +25,6 @@ void print_alphabet(void);
 */
 
 void print_alphabet_x10(void);
+
+
+#endif
