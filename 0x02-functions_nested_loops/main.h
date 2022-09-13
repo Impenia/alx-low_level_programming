@@ -1,5 +1,5 @@
-#ifndef main.h
-#define main.h
+#ifndef MAIN.H
+#define MAIN.H
 
 /**
 * _putchar - writes the character c to stdout
@@ -25,6 +25,9 @@ void print_alphabet(void);
 */
 
 void print_alphabet_x10(void);
+
+int _islower(int c);
+
 
 
 #endif
