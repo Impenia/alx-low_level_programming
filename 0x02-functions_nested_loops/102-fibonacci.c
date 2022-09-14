@@ -13,7 +13,7 @@ int main(void)
 int i;
 int64_t num1 = 1;
 int64_t num2 = 2;
-int64_t nextnum = mum1 + num2;
+int64_t nextnum = num1 + num2;
 
 printf("%" PRId64 "", num1);
 printf("%" PRId64 "", num2);
