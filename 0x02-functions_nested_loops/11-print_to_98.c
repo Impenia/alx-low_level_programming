@@ -28,8 +28,6 @@ printf("%i, ", i);
 }
 }
 
- printf("%i\n", i);
-
-}
+printf("%i\n", i);
 
 }
