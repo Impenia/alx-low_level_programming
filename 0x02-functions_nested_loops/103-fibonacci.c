@@ -12,7 +12,6 @@ int main(void)
 
 int a;
 int fibsum = 0;
-int evennum;
 int firstnum = 0;
 int secondnum = 1;
 int nextnum = firstnum + secondnum;
