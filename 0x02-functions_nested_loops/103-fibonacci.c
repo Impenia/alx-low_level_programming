@@ -17,7 +17,7 @@ int secondnum = 1;
 int nextnum = firstnum + secondnum;
 
  
-for (a = 1; a <= 50; a++)
+for (a = 1; a <= 30; a++)
 {
 nextnum = firstnum + secondnum;
 firstnum = secondnum;
