@@ -14,12 +14,12 @@ int a;
 int fibsum = 0;
 int firstnum = 0;
 int secondnum = 1;
-int nextnum = firstnum + secondnum;
+int nextnum;
 
 for (a = 1; a <= 50; a++)
 {
 
-if (nextnum <= 4000000)
+if (nextnum <= 4000)
 {
 nextnum = firstnum + secondnum;
 firstnum = secondnum;
