@@ -14,7 +14,7 @@ int a;
 int fibsum = 0;
 int firstnum = 0;
 int secondnum = 1;
-int nextnum;
+int nextnum = firstnum + secondnum;
 
  
 while (nextnum <= 4000000)
