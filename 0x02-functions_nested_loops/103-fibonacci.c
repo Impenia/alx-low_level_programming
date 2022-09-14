@@ -17,10 +17,10 @@ int secondnum = 1;
 int nextnum = firstnum + secondnum;
 
 
-for (a = 1; a <= 30; a++)
+for (a = 1; a <= 50; a++)
 {
 
-if (firstnum > 4000000)
+if (nextnum > 4000000)
 {
 break;
 }
