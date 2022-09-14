@@ -18,7 +18,7 @@ int64_t nextnum = num1 + num2;
 
 printf("%" PRId64 "\n", num1);
 printf("%" PRId64 "\n", num2);
-printf("%" PRId64 "\n", nextum);
+printf("%" PRId64 "\n", nextnum);
 
 for (i = 4; i <= 50; i++)
 {
