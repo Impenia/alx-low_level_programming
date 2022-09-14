@@ -17,17 +17,16 @@ int secondnum = 1;
 int nextnum = firstnum + secondnum;
 
  
-while (nextnum <= 4000000)
-{
-for (a = 1; a <= 50; a++)
+for (a = 1; a <= 20; a++)
 {
 nextnum = firstnum + secondnum;
 firstnum = secondnum;
 secondnum = nextnum;
 fibsum = fibsum + nextnum;
-}
+ if ((nextnum % 2) == 0)
+   {
 printf("%i, ", nextnum);
-
+   }
 }
 printf("%i\n", fibsum);
 
