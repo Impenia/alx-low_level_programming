@@ -16,14 +16,19 @@ int firstnum = 0;
 int secondnum = 1;
 int nextnum = firstnum + secondnum;
 
- 
+
 for (a = 1; a <= 30; a++)
 {
 nextnum = firstnum + secondnum;
 firstnum = secondnum;
 secondnum = nextnum;
+
+ if (nextnum <= 4000000)
+   {
+     break;
+   }
  
- if (nextnum <= 4000000 && (nextnum % 2) == 0)
+ if ((nextnum % 2) == 0)
    {
      fibsum = fibsum + nextnum;
      printf("%i, ", nextnum);
