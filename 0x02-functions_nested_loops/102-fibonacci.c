@@ -14,7 +14,7 @@ int num1 = 1;
 int num2 = 2;
 long int nextnum = num1 + num2;
 
-printf("%i, %i, %i", num1, num2, nextnum);
+printf("%i, %i, %li", num1, num2, nextnum);
 
 for (i = 4; i <= 50; i++)
 {
@@ -22,7 +22,7 @@ num1 = num2;
 num2 = nextnum;
 nextnum = num1 + num2;
 
-printf(", %i", nextnum);
+printf(", %li", nextnum);
 }
 
 printf("\n");
