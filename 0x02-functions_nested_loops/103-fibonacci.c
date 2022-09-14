@@ -3,8 +3,8 @@
 
 /**
 * main - print sum of even fibonacci numbers
-* 
-* Result: Success (0).
+*
+* Return: Success (0).
 */
 
 int main(void)
@@ -27,7 +27,7 @@ secondnum = nextnum;
 fibsum = fibsum + nextnum;
 }
 printf("%i, ", nextnum);
-     
+    
 }
 printf("%i\n", fibsum);
 
