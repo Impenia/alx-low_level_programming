@@ -19,14 +19,18 @@ int nextnum = firstnum + secondnum;
 
  for (a = 1; a <= 50; a++)
    {
+
+     if (nextnum <= 4000000 && (nextnum % 2) == 0)
+       {
+     nextnum = firstnum + secondnum;
      firstnum = secondnum;
      secondnum = nextnum;
-     nextnum = firstnum + secondnum;
+     fibsum = fibsum + nextnum;
+       }
+     printf("%i, ", nextnum);
+     
+   }
+ printf("%i\n", fibsum);
 
-     if (nextnum <= 4000000
-     if ((nextnum % 2) == 0)
-       evennum = nextnum;
-     fibsum = fibsum + evennum;
-     
-     if (nextnum <= 4000000 && nux
-     
+ return (0);
+}
