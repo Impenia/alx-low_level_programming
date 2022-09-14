@@ -1,4 +1,5 @@
-#include <stdio.h>
+
+0;276;0c#include <stdio.h>
 #include <stdint.h>
 #include <inttypes.h>
 
@@ -25,6 +26,10 @@ printf(", %" PRId64 "", nextnum);
 num1 = num2;
 num2 = nextnum;
 nextnum = num1 + num2;
+ if (nextnum < 0)
+   {
+     nextnum = nextnum * (-1);
+   }
 
 }
 

@@ -16,7 +16,6 @@ int firstnum = 0;
 int secondnum = 1;
 int nextnum = firstnum + secondnum;
 
-
 for (a = 1; a <= 50; a++)
 {
 
