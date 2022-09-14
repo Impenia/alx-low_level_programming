@@ -16,10 +16,10 @@ int firstnum = 0;
 int secondnum = 1;
 int nextnum;
 
-for (a = 1; a <= 50; a++)
+ 
+while (nextnum <= 4000000)
 {
-
-if (nextnum <= 4000)
+for (a = 1; a <= 50; a++)
 {
 nextnum = firstnum + secondnum;
 firstnum = secondnum;
