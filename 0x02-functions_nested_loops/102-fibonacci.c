@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - printfirst 50 fibonscci sequence starting with 1 & 2.
+ * main - printfirst 50 fibonacci sequence starting with 1 & 2.
  *
  * Return: (0) Success
  */
@@ -10,19 +10,19 @@ int main(void)
 {
 
 int i;
-int num1 = 1;
-int num2 = 2;
-int nextnum = num1 + num2;
+long long int num1 = 1;
+long long int num2 = 2;
+long long int nextnum = mum1 + num2;
 
-printf("%i, %i, %i", num1, num2, nextnum);
+printf("%i, %i, %lli", num1, num2, nextnum);
 
 for (i = 4; i <= 50; i++)
 {
-num1 = num2;
-num2 = nextnum;
-nextnum = num1 + num2;
+  num1 = num2;
+  num2 = nextnum;
+  nextnum = num1 + num2;
 
-printf(", %i", nextnum);
+  printf(", %lli", nextnum);
 }
 
 printf("\n");

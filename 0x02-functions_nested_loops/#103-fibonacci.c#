@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include "main.h"
+
+/**
+* main - print sum of even fibonacci numbers
+" 
+* Result: Success (0).
+*/
+
+int main(void)
+{
+
+int a;
+int firstnum = 1;
+int secondnum = 2;
+int nextnum = firstnum + secondnum;
+
+ for (a = 
