@@ -23,7 +23,7 @@ nextnum = firstnum + secondnum;
 firstnum = secondnum;
 secondnum = nextnum;
 
- if (nextnum <= 4000000)
+ if (nextnum > 4000000)
    {
      break;
    }
