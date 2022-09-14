@@ -34,7 +34,7 @@ fibsum = fibsum + nextnum;
 printf("%i, ", fibsum);
 }
 }
-printf('\n');
+printf("\n");
 
 return (0);
 }
