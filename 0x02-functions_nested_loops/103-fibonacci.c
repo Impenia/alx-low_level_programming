@@ -23,16 +23,16 @@ nextnum = firstnum + secondnum;
 firstnum = secondnum;
 secondnum = nextnum;
 
- if (nextnum > 4000000)
-   {
-     break;
-   }
+if (nextnum > 4000000)
+{
+break;
+}
  
- if ((nextnum % 2) == 0)
-   {
-     fibsum = fibsum + nextnum;
-     printf("%i, ", nextnum);
-   }
+if ((nextnum % 2) == 0)
+{
+fibsum = fibsum + nextnum;
+printf("%i, ", nextnum);
+}
 }
 printf("%i\n", fibsum);
 
