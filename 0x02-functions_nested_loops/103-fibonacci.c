@@ -20,10 +20,10 @@ int nextnum = firstnum + secondnum;
 for (a = 1; a <= 30; a++)
 {
 
-  if (nextnum > 4000000)
-    {
-      break;
-    }
+if (secondnum > 4000000)
+{
+break;
+}
   
 nextnum = firstnum + secondnum;
 firstnum = secondnum;
