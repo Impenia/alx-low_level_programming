@@ -26,3 +26,6 @@ printf(", %i", nextnum);
 }
 
 printf("\n");
+
+return (0);
+}
