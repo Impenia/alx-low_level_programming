@@ -25,10 +25,6 @@ printf(", %" PRId64 "", nextnum);
 num1 = num2;
 num2 = nextnum;
 nextnum = num1 + num2;
- if (nextnum < 0)
-   {
-     nextnum = nextnum * (-1);
-   }
 
 }
 
