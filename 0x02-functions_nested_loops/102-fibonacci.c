@@ -15,9 +15,9 @@ int64_t num1 = 1;
 int64_t num2 = 2;
 int64_t nextnum = num1 + num2;
 
-printf("%" PRId64 "", num1);
-printf("%" PRId64 "", num2);
-printf("%" PRId64 "", nextum);
+printf("%" PRId64 "\n", num1);
+printf("%" PRId64 "\n", num2);
+printf("%" PRId64 "\n", nextum);
 
 for (i = 4; i <= 50; i++)
 {
@@ -25,7 +25,7 @@ for (i = 4; i <= 50; i++)
   num2 = nextnum;
   nextnum = num1 + num2;
 
-  printf(", %" PRId64 "", nextnum);
+  printf(", %" PRId64 "\n", nextnum);
 }
 
 printf("\n");
