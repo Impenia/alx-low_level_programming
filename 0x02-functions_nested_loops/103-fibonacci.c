@@ -19,7 +19,7 @@ int nextnum = firstnum + secondnum;
 for (a = 1; a <= 50; a++)
 {
 
-if (nextnum <= 4000000 && (nextnum % 2) == 0)
+if (nextnum <= 4000000)
 {
 nextnum = firstnum + secondnum;
 firstnum = secondnum;
