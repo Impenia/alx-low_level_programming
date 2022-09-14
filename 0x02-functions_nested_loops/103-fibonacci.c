@@ -31,10 +31,10 @@ break;
 if ((nextnum % 2) == 0)
 {
 fibsum = fibsum + nextnum;
-printf("%i, ", nextnum);
+printf("%i, ", fibsum);
 }
 }
-printf("%i\n", fibsum);
+printf('\n');
 
 return (0);
 }
