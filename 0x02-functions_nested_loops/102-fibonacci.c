@@ -11,11 +11,13 @@ int main(void)
 {
 
 int i;
-long long int num1 = 1;
-long long int num2 = 2;
-long long int nextnum = mum1 + num2;
+int64_t num1 = 1;
+int64_t num2 = 2;
+int64_t nextnum = mum1 + num2;
 
-printf("%i, %i, %lli", num1, num2, nextnum);
+printf("%" PRId64 "", num1);
+printf("%" PRId64 "", num2);
+printf("%" PRId64 "", nextum);
 
 for (i = 4; i <= 50; i++)
 {
@@ -23,7 +25,7 @@ for (i = 4; i <= 50; i++)
   num2 = nextnum;
   nextnum = num1 + num2;
 
-  printf(", %lli", nextnum);
+  printf(", %" PRId64 "", nextnum);
 }
 
 printf("\n");
