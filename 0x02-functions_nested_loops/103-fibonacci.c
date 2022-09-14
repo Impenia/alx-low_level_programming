@@ -27,7 +27,7 @@ secondnum = nextnum;
 fibsum = fibsum + nextnum;
 }
 printf("%i, ", nextnum);
-    
+
 }
 printf("%i\n", fibsum);
 
