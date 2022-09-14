@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdint.h>
 
 /**
  * main - printfirst 50 fibonacci sequence starting with 1 & 2.
