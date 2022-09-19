@@ -14,28 +14,21 @@ void randomPasswordGeneration(int N)
 {
 
     /* Initialize counter */
-
     int i = 0;
-
-  
-
     int randomizer = 0;
 
-  
+  /* Array of numbers */                                                
+	char numbers[] = "0123456789";
+
+ /* Stores the random password */
+	char password[N]; 
+
 
     /* Seed the random-number generator */
     /* with current time so that the */
     /* numbers will be different every time */
 
     srand((unsigned int)(time(NULL)));
-
-  
-
-    /* Array of numbers */
-
-    char numbers[] = "0123456789";
-
-  
 
     /* Array of small alphabets */
 
@@ -52,13 +45,6 @@ void randomPasswordGeneration(int N)
     /* Array of all the special symbols */
 
     char symbols[] = "!@#$^&*?";
-
-  
-
-    /* Stores the random password */
-
-    char password[N];
-
   
 
     /* To select the randomizer */
