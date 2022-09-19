@@ -2,6 +2,9 @@
 #include <limits.h>
 #include "main.h"
 
+#define Is_NUMERIC_STRING(d) (*(char*)d >= 48) && (*(char*)d<= 57)
+#define CONVERSION(d,k)  ((d<<3) +(d<<1))+(*(char*)k-48);
+
 /**
 * _atoi - function to converts a string to integer
 * @s: strint to be converted
