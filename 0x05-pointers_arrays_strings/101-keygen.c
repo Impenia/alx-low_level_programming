@@ -31,7 +31,8 @@ printf("\n");
 
 printf("\t");
 
-for(int i = 0; i < password_length; i++) {
+for(int i = 0; i < password_length; i++) 
+{
 
     printf("*");
 
