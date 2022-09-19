@@ -44,6 +44,8 @@ for(i = 0; i < password_length; i++)
 
 printf("\n");
 
+return (0);
+
 }
 
 
