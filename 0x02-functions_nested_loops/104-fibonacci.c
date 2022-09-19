@@ -36,7 +36,7 @@ int main(void)
 	nonda2 = (num11 + num22);
 	num11 = num22, num22 = nonda2;
 
-	printf("%" PRId64 "", spart_num2);
+	printf("%" PRId64 "", num22);
 	}
 
 	if (i != 98)
