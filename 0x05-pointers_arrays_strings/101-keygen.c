@@ -3,6 +3,13 @@
 #include <stdlib.h>
 #include "main.h"
 
+/**
+* password - Random password
+* @password_length: lll
+*
+* Return: pw
+*/
+
 int password(int password_length)
 {
 
