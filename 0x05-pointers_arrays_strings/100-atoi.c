@@ -47,8 +47,8 @@ int _atoi(char *s)
 	{
 	num = num * 10 + (s[i] - '0');
         i++;
-	}
 	return num;
+	}
 
 	base = 10 * base + (s[i++] - '0');
 	}
