@@ -17,7 +17,7 @@ char list[] = "1234567890qwertyuiopasdfghjklzxcvbnm!@#$%^&*()_- +=QWERTYUIOPASDF
 
 printf("\t");
 
-for(int i = 0; i < password_length; i++) {
+for (int i = 0; i < password_length; i++) {
 
     printf("*");
 
