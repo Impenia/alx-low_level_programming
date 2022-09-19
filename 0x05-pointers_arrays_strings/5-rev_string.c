@@ -1,14 +1,10 @@
-nclude <stdio.h>
-
-#include "holberton.h"
+#include <stdio.h>
+#include "main.h"
 
 /**
-
- *rev_string - update value.
-
- *@s: value to be evaluate.
-
- *Return: not.
+ *rev_string - a function that reverses a string.
+ *@s: string to be reversed.
+ *Return: void.
 
  */
 
@@ -16,44 +12,29 @@ void rev_string(char *s)
 
 {
 
+	int lenth = 0;
 	int len = 0;
-
-	int l = 0;
-
-	char *y = s;
-
-	int e = 0;
-
+	char *a = s;
+	int b = 0;
 	int x;
+	char y;
 
-	char n;
-
-
-
-	while (*y != '\0')
-
+	while (*a != '\0')
 	{
-
-		y++;
-
-		len++;
+		a++;
+		length++;
 
 	}
 
-	l = len - 1;
+	len = length - 1;
 
-	for ( ; e < ((l / 2) + 1) ; e++)
+	for ( ; b < ((len / 2) + 1) ; b++)
 
 	{
-
-		x = (l - e);
-
-		n = s[e];
-
-		s[e] = s[x];
-
-		s[x] = n;
-
+		x = (len - b);
+		y = s[b];
+		s[b] = s[x];
+		s[x] = y;
 	}
 
 }
