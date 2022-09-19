@@ -39,6 +39,13 @@ int _atoi(char *s)
 		return (INT_MIN);
 	}
 
+	while (Is_NUMERIC_STRING(s))
+	{
+	i=(i*10)+ (*s-48);
+	s++;
+	}
+	return (i);
+
 	base = 10 * base + (s[i++] - '0');
 	}
 
