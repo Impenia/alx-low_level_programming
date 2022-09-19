@@ -1,128 +1,68 @@
-#include <math.h>
 #include <stdio.h>
-#include <stdlib.h>
 #include <time.h>
+#include <stdlib.h>
 #include "main.h"
-  
 
-/* Function to randomly generates password
-* of length N
-*/
+int password(int password_length) {
 
-void randomPasswordGeneration(int N)
+char list[] = "1234567890qwertyuiopasdfghjklzxcvbnm!@#$%^&*()_- +=QWERTYUIOPASDFGHJKLZXCVBNM[]{};':\"<>,.?/\|";
 
-{
+printf("\t");
 
-    /* Initialize counter */
-    int i = 0;
-    int randomizer = 0;
+for(int i = 0; i < password_length; i++) {
 
-  /* Array of numbers */                                                
-	char numbers[] = "0123456789";
+    printf("*");
 
- /* Stores the random password */
-	char password[N]; 
+}
 
+printf("\n");
 
-    /* Seed the random-number generator */
-    /* with current time so that the */
-    /* numbers will be different every time */
+printf("\t");
 
-    srand((unsigned int)(time(NULL)));
+srand(time(NULL));
 
-    /* Array of small alphabets */
+for(int i = 0; i < password_length; i++) {
 
-    char letter[] = "abcdefghijklmnoqprstuvwyzx";
+    printf("%c", list[rand() % (sizeof list - 1)]);
 
-  
+}
 
-    /* Array of capital alphabets */
+printf("\n");
 
-    char LETTER[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
+printf("\t");
 
-  
+for(int i = 0; i < password_length; i++) {
 
-    /* Array of all the special symbols */
+    printf("*");
 
-    char symbols[] = "!@#$^&*?";
-  
+}
 
-    /* To select the randomizer */
-    /* inside the loop */
+printf("\n");
 
-    randomizer = rand() % 4;
+}
 
-  
+int main() {
 
-    /* Iterate over the range [0, N] */
+int password_length;
 
-    for (i = 0; i < N; i++) {
+printf("\n\t*********************************\n\n");
 
-  
+printf("\tWelcome to the password generator\n\n");
 
-        if (randomizer == 1) {
+printf("\t*********************************\n");
 
-            password[i] = numbers[rand() % 10];
+printf("\n\tEnter length of the password = ");
 
-            randomizer = rand() % 4;
+scanf("%d", &password_length);
 
-            printf("%c", password[i]);
+printf("\n");
 
-        }
+printf("\n");
 
-        else if (randomizer == 2) {
+password(password_length);
 
-            password[i] = symbols[rand() % 8];
-
-            randomizer = rand() % 4;
-
-            printf("%c", password[i]);
-
-        }
-
-        else if (randomizer == 3) {
-
-            password[i] = LETTER[rand() % 26];
-
-            randomizer = rand() % 4;
-
-            printf("%c", password[i]);
-
-        }
-
-        else {
-
-            password[i] = letter[rand() % 26];
-
-            randomizer = rand() % 4;
-
-            printf("%c", password[i]);
-
-        }
-
-    }
+return 0;
 
 }
 
 
-/* Driver Code */
-
-int main()
-{
-
-    /* Length of the password to */
-    /* be generated */
-
-    int N = 10;
-
-  
-
-    /* Function Call */
-
-    randomPasswordGeneration(N);
-
-  
-
-    return 0;
-
-}
