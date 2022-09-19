@@ -1,72 +1,83 @@
 #include <stdio.h>
-#include <time.h>
+
 #include <stdlib.h>
-#include "main.h"
+
+#include <time.h>
+
+
 
 /**
-* password - Random password
-* @password_length: lll
-*
-* Return: pw
-*/
 
-int password(int password_length)
+ * main - random password generator for 101-crackme
+
+ *
+
+ * Return: always 0
+
+ */
+
+int main(void)
+
 {
 
-int i;
+	int i, j, k, s;
 
-char list[] = "1234567890qwertyuiopasdfghjklzxcvbnm!@#$%^&*()_- +=QWERTYUIOPASDFGHJKLZXCVBNM[]{};':\"<>,.?/";
+	char c[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
-printf("\t");
+	char p[58];
 
-for (i = 0; i < password_length; i++) 
-{
-	printf("*");
+
+
+	srand(time(NULL));
+
+	while (s != 2772)
+
+	{
+
+		i = k = s = 0;
+
+		while ((2772 - 122) > s)
+
+		{
+
+			j = rand() % 62;
+
+			p[i] = c[j];
+
+			s += c[j];
+
+			i++;
+
+		}
+
+		while (c[k])
+
+		{
+
+			if (c[k] == (2772 - s))
+
+			{
+
+				p[i] = c[k];
+
+				s += c[k];
+
+				i++;
+
+				break;
+
+			}
+
+			k++;
+
+		}
+
+	}
+
+	p[i] = '\0';
+
+	printf("%s", p);
+
+	return (0);
+
 }
-
-printf("\n");
-printf("\t");
-
-srand(time(NULL));
-
-for(i = 0; i < password_length; i++) 
-{
-	printf("%c", list[rand() % (sizeof list - 1)]);
-}
-
-printf("\n");
-printf("\t");
-
-for(i = 0; i < password_length; i++) 
-{
-	printf("*");
-}
-
-printf("\n");
-
-return (0);
-
-}
-
-
-int main() {
-
-int password_length;
-
-printf("\n\t*********************************\n\n");
-printf("\tWelcome to the password generator\n\n");
-printf("\t*********************************\n");
-printf("\n\tEnter length of the password = ");
-scanf("%d", &password_length);
-
-printf("\n");
-
-printf("\n");
-
-password(password_length);
-
-return (0);
-
-}
-
-
