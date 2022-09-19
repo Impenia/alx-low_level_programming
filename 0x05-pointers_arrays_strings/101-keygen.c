@@ -5,14 +5,15 @@
 #include "main.h"
   
 
-// Function to randomly generates password
-// of length N
+/* Function to randomly generates password
+* of length N
+*/
 
 void randomPasswordGeneration(int N)
 
 {
 
-    // Initialize counter
+    /* Initialize counter */
 
     int i = 0;
 
