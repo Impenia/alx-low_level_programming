@@ -3,7 +3,15 @@
 #include <stdlib.h>
 #include "main.h"
 
-int password(int password_length) {
+/**
+* password - Random password generator
+* @password_length: l
+*
+* Return: password
+*/
+
+int password(int password_length) 
+{
 
 char list[] = "1234567890qwertyuiopasdfghjklzxcvbnm!@#$%^&*()_- +=QWERTYUIOPASDFGHJKLZXCVBNM[]{};':\"<>,.?/\|";
 
