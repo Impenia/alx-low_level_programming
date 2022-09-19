@@ -13,11 +13,12 @@
 int password(int password_length)
 {
 
+int i;
+
 char list[] = "1234567890qwertyuiopasdfghjklzxcvbnm!@#$%^&*()_- +=QWERTYUIOPASDFGHJKLZXCVBNM[]{};':\"<>,.?/";
 
 printf("\t");
 
-int i;
 for (i = 0; i < password_length; i++) 
 {
 	printf("*");
