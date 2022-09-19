@@ -25,7 +25,7 @@ char *_strcpy(char *dest, char *src);
 
 int _atoi(char *s);
 
-int password(int password_length)
+int password(int password_length);
 
 
 #endif
