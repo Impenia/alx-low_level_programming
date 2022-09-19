@@ -8,9 +8,8 @@ int _atoi(char* s)
 
     int sign = 1, base = 0, i = 0;
 
-     
-
-    // if whitespaces then ignore.
+    
+    /* if whitespaces then ignore.*/
 
     while (s[i] == ' ')
 
@@ -22,7 +21,7 @@ int _atoi(char* s)
 
      
 
-    // sign of number
+    /* sign of number */
 
     if (s[i] == '-' || s[i] == '+')
 
@@ -34,13 +33,13 @@ int _atoi(char* s)
 
    
 
-    // checking for valid input
+    /* checking for valid input */
 
     while (s[i] >= '0' && s[i] <= '9')
 
     {
 
-        // handling overflow test case
+        /* handling overflow test case */
 
         if (base > INT_MAX / 10
 
