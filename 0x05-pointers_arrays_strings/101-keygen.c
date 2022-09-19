@@ -17,7 +17,8 @@ char list[] = "1234567890qwertyuiopasdfghjklzxcvbnm!@#$%^&*()_- +=QWERTYUIOPASDF
 
 printf("\t");
 
-for (int i = 0; i < password_length; i++) 
+int i;
+for (i = 0; i < password_length; i++) 
 {
 	printf("*");
 }
@@ -27,7 +28,7 @@ printf("\t");
 
 srand(time(NULL));
 
-for(int i = 0; i < password_length; i++) 
+for(i = 0; i < password_length; i++) 
 {
 	printf("%c", list[rand() % (sizeof list - 1)]);
 }
@@ -35,7 +36,7 @@ for(int i = 0; i < password_length; i++)
 printf("\n");
 printf("\t");
 
-for(int i = 0; i < password_length; i++) 
+for(i = 0; i < password_length; i++) 
 {
 	printf("*");
 }
