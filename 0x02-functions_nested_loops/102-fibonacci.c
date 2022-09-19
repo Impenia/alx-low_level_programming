@@ -22,17 +22,14 @@ printf(", %" PRId64 "", nextnum);
 
 for (i = 4; i <= 50; i++)
 {
-num1 = num2;
-num2 = nextnum;
-nextnum = num1 + num2;
+	num1 = num2;
+	num2 = nextnum;
+	nextnum = num1 + num2;
 
-printf(", %" PRId64 "", nextnum);
+	printf(", %" PRId64 "", nextnum);
 }
 
 printf("\n");
 
 return (0);
 }
-
-
-
