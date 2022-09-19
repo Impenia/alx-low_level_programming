@@ -3,7 +3,8 @@
 #include <stdlib.h>
 #include "main.h"
 
-int password(int password_length) {
+int password(int password_length)
+{
 
 char list[] = "1234567890qwertyuiopasdfghjklzxcvbnm!@#$%^&*()_- +=QWERTYUIOPASDFGHJKLZXCVBNM[]{};':\"<>,.?/\|";
 
