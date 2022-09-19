@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include "holberton.h"
+#include "main.h"
 
 /**
 *_strcpy - a function that copies a string.
