@@ -27,7 +27,7 @@ int main(void)
 	nonda2 = (num11 + num22) % LARGEST;
 	nonda3 = num1 + num2 + nonda1;
 	num1 = num2, num2 = nonda3;
-	snum11 = num22, num22 = nonda2;
+	num11 = num22, num22 = nonda2;
 
 	printf("%lu%010lu", num2, num22);
 	}
