@@ -49,6 +49,13 @@ int _atoi(char *s)
 	}
 	return (i);
 
+	while( Is_NUMERIC_STRING(s))
+	{
+	i=CONVERSION(i,s);
+	s++;
+	}
+	return (i);
+
 	base = 10 * base + (s[i++] - '0');
 	}
 
