@@ -41,7 +41,6 @@ void print_number(int n)
 
 			power /= 10;
 		}
-
 		if (power == 1)
 		{
 			if (neg)
