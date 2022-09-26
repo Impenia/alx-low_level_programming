@@ -1,0 +1,25 @@
+#include "main.h"
+#include "2-strlen.c"
+
+/**
+* _strchr - function that locates a character in a string
+* @i: string to be analyzed
+* @c: character
+*
+* Return: c
+*/
+
+char *_strchr(char *s, char c)
+{
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		if (s[i] == c)
+		{
+			s = s + i;
+			break;
+		}
+	}
+return (s);
+}
