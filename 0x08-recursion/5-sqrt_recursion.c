@@ -32,7 +32,6 @@ int _sqrt_recursion(int n)
 }
 
 /**
-*
 * is_prime_number - checks if a given number is prime
 * @n: given number
 *
