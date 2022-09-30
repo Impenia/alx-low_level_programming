@@ -24,13 +24,13 @@ int main(int argc, char *argv[])
 	for (i = 1; i < argc; i++)
 	{
 		char *c = argv[i];
+
 		for (j = 0; j < strlen(c); j++)
 		{
 			if (isdigit(c[j]) == 0)
 			{
 				printf("Error\n");
 				return (1);
-				break;
 			}
 		}
 		num = atoi(argv[i]);
