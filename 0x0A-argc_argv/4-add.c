@@ -19,18 +19,19 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		if (isdigit(argv[i]) == 0)
-		{
-			printf("Error\n");
-			return (1);
-		}
-		else
+		if (atoi(argv[i]) >= 0 && atoi(argv[i]) <= 9)
 		{
 			num = atoi(argv[i]);
 			sum = sum + num;
 		}
-		printf("%d\n", sum);
+		else
+		{
+			printf("Error\n");
+			return (1);
+			break;
+		}
 	}
+	printf("%d\n", sum);
 	return (0);
 }
 
