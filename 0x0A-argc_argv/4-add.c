@@ -7,6 +7,7 @@
 * @argc: Argument count
 * @argv: Array of pointers
 *
+* Return: (0) Success
 **/
 
 int main(int argc, char *argv[])
