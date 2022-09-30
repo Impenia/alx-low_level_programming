@@ -12,16 +12,20 @@
 
 int main(int argc, char *argv[])
 {
-	int arg1 = atoi(argv[1]);
-	int arg2 = atoi(argv[2]);
-	int mult = arg1 * arg2;
+	int arg1, arg2, mult;
 
-	if (argc < 2)
+	if (argc >= 2)
+	{
+	arg1 = atoi(argv[1]);
+	arg2 = atoi(argv[2]);
+	mult = arg1 * arg2;
+
+	printf("%d\n", mult);
+	}
+	else
 	{
 		printf("Error\n");
 		return (1);
 	}
-
-	printf("%d\n", mult);
 	return (0);
 }
