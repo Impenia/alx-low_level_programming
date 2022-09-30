@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 {
 	int arg1, arg2, mult;
 
-	if (argc >= 2)
+	if (argc >= 3)
 	{
 	arg1 = atoi(argv[1]);
 	arg2 = atoi(argv[2]);
