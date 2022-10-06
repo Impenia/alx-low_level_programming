@@ -24,12 +24,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	for (j = 0; (j < n && strlen(s2) >= n); j++)
 	{
-		if (strlen(s2) < 1)
-			s2[j] = "";
 		s3[i] = s2[j];
 		i++;
 	}
 	s3[i] = '\0';
 
-	return (s);
+	return (s3);
 }
