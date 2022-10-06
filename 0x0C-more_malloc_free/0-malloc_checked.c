@@ -11,7 +11,7 @@
 
 void *malloc_checked(unsigned int b)
 {
-	char *mem;
+	unsigned int *mem;
 
 	mem = malloc(b);
 
