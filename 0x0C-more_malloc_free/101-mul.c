@@ -1,32 +1,19 @@
 #include <stdlib.h>
-
 #include <stdio.h>
-
 #include "main.h"
 
-
-
 /**
- *
- *  * is_digit - checks if a string contains a non-digit char
- *
- *   * @s: string to be evaluated
- *
- *    *
- *
- *     * Return: 0 if a non-digit is found, 1 otherwise
- *
- *      */
+* is_digit - checks if a string contains a non-digit char
+* @s: string to be evaluated
+*
+* Return: 0 if a non-digit is found, 1 otherwise
+*/
 
 int is_digit(char *s)
-
 {
+	int i = 0;
 
-		int i = 0;
-
-
-
-			while (s[i])
+	while (s[i])
 
 					{
 
