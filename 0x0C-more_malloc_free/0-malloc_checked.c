@@ -9,6 +9,8 @@
 * Return: Pointer
 */
 
+void exit(int status);
+
 void *malloc_checked(unsigned int b)
 {
 	void *p;
