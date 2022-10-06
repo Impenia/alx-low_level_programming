@@ -14,7 +14,6 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i, j;
-	unsigned int s2_len;
 	char *s3;
 
 	if (n >= strlen(s2))
