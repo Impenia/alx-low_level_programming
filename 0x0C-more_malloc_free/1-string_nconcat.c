@@ -19,6 +19,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s3 == NULL)
 		return (NULL);
 
+	if (n >= strlen(s2))
+		n = strlen(s2);
+
 	for (i = 0; i < strlen(s1); i++)
 		s3[i] = s1[i];
 
