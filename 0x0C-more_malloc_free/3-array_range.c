@@ -3,7 +3,11 @@
 #include <string.h>
 
 /**
+* array_range - A function that creates an array of integers
+* @min: first number
+* @max: last number
 *
+* Return: pointer to newly created array.
 */
 
 int *array_range(int min, int max)
