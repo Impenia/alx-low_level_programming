@@ -34,8 +34,4 @@ void print_dog(struct dog *d)
 			printf("(nill)\n");
 		}
 	}
-	else
-	{
-		;
-	}
 }
