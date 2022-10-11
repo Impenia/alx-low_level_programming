@@ -1,6 +1,6 @@
 #ifndef DOUBLEGUARD
 #define DOUBLEGUARD
 
-#define SUM(X, Y) X+Y
+#define SUM(X, Y) (X + Y)
 
 #ifndef
