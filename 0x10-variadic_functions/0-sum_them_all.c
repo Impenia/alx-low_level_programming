@@ -3,7 +3,7 @@
 
 /**
 * sum_them_all - A function that returns the sum of all its parts
-* @unsigned int: number of arguments.
+* @n: number of arguments.
 * @...: variable arguments
 *
 * Return: sum of arguments
