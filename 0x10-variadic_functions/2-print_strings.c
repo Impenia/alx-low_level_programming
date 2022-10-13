@@ -23,7 +23,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		string = va_arg(n_args, char *);
 		if (string == NULL)
-			printf("nil");
+			printf("(nil)");
 
 		printf("%s", string);
 
